@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADITYA'S STREAM | Premium FIFA World Cup 2026 Live Streaming</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Watch the FIFA World Cup 2026 live on ADITYA'S STREAM. Direct high-definition 4K streaming, live schedules, match highlights, and team statistics. No signup, no login required.">
+    <meta name="keywords" content="FIFA World Cup 2026, world cup stream, live football streaming, soccer streaming, Portugal vs Uzbekistan live, free sports stream, ADITYA STREAM">
+    <meta name="author" content="ADITYA'S STREAM">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adityasstream.com/">
+    <meta property="og:title" content="ADITYA'S STREAM | Premium FIFA World Cup 2026 Live Streaming">
+    <meta property="og:description" content="Experience premium 4K football streaming on all devices. No login, direct entry. Match updates, stats, schedules.">
+    <meta property="og:image" content="assets/stadium_bg.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://adityasstream.com/">
+    <meta property="twitter:title" content="ADITYA'S STREAM | Premium FIFA World Cup 2026 Live Streaming">
+    <meta property="twitter:description" content="Experience premium 4K football streaming on all devices. No login, direct entry. Match updates, stats, schedules.">
+    <meta property="twitter:image" content="assets/stadium_bg.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-soccer-container" id="particle-container">
+        <!-- Javascript will inject floating SVGs here -->
+    </div>
+
+    <!-- Header / Sticky Navigation Bar -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">ADITYA'S</span>
+                <span class="logo-accent">STREAM</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#live-section" class="nav-link">Live Match</a></li>
+                    <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                    <li><a href="#highlights" class="nav-link">Highlights</a></li>
+                    <li><a href="#teams" class="nav-link">Teams</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button id="fullscreen-btn" class="header-btn" aria-label="Toggle Fullscreen">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4" />
+                    </svg>
+                    <span>Fullscreen</span>
+                </button>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Open Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-badge animate-fade">
+                <span class="live-dot-pulse"></span>
+                <span>FIFA WORLD CUP 2026 INSPIRED</span>
+            </div>
+            <h1 class="hero-title animate-slide-up">
+                THE ULTRA PREMIUM<br>
+                <span class="text-gradient">STREAMING EXPERIENCE</span>
+            </h1>
+            <p class="hero-subtitle animate-slide-up">
+                Enjoy matches in Ultra HD 4K without signups, subscription fees, or limits. Cast directly to your Smart TV or watch on the go.
+            </p>
+            
+            <!-- Global World Cup Countdown & Clock -->
+            <div class="hero-widgets animate-slide-up">
+                <div class="dynamic-clock-card">
+                    <div class="clock-label">STADIUM CLOCK (LOCAL)</div>
+                    <div id="dynamic-clock" class="clock-time">00:00:00</div>
+                    <div id="dynamic-date" class="clock-date">JUNE 23, 2026</div>
+                </div>
+                
+                <div class="countdown-card">
+                    <div class="countdown-label">NEXT LIVE BROADCAST STARTS IN</div>
+                    <div class="countdown-timer" id="countdown-timer">
+                        <div class="time-block">
+                            <span id="countdown-hours" class="time-num">00</span>
+                            <span class="time-label">HRS</span>
+                        </div>
+                        <div class="time-divider">:</div>
+                        <div class="time-block">
+                            <span id="countdown-mins" class="time-num">00</span>
+                            <span class="time-label">MINS</span>
+                        </div>
+                        <div class="time-divider">:</div>
+                        <div class="time-block">
+                            <span id="countdown-secs" class="time-num">00</span>
+                            <span class="time-label">SECS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-buttons animate-slide-up">
+                <a href="#live-section" class="btn btn-primary glow-button">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Watch Live Now
+                </a>
+                <a href="#schedule" class="btn btn-secondary">
+                    View Schedule
+                </a>
+            </div>
+        </div>
+        
+        <!-- Animated Particles / Floodlight beams -->
+        <div class="floodlight-beams">
+            <div class="beam beam-left"></div>
+            <div class="beam beam-right"></div>
+        </div>
+    </section>
+
+    <!-- Quick Badges Bar -->
+    <div class="badges-bar container">
+        <div class="badge-item">
+            <div class="badge-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+            </div>
+            <div class="badge-info">
+                <h4>LIVE Pulse</h4>
+                <p>Real-time updates</p>
+            </div>
+        </div>
+        <div class="badge-item">
+            <div class="badge-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div class="badge-info">
+                <h4>Ultra HD 4K</h4>
+                <p>Unmatched quality</p>
+            </div>
+        </div>
+        <div class="badge-item">
+            <div class="badge-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="badge-info">
+                <h4>Multi-Device</h4>
+                <p>TV, Mobile, Desktop</p>
+            </div>
+        </div>
+        <div class="badge-item">
+            <div class="badge-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+            </div>
+            <div class="badge-info">
+                <h4>No Sign Up</h4>
+                <p>Zero hurdles</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Match Player Section -->
+    <section class="live-section container section-reveal" id="live-section">
+        <div class="section-header text-center">
+            <h2 class="section-title">LIVE BROADCAST</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="player-outer-wrapper">
+            <!-- Stadium Lights Atmosphere around Player -->
+            <div class="player-glow-effect"></div>
+            
+            <div class="player-container glass-card">
+                <!-- Floating Badges inside Player -->
+                <div class="player-floating-badges">
+                    <span class="live-pill">
+                        <span class="live-dot-pulse"></span>
+                        LIVE
+                    </span>
+                    <span class="quality-pill">4K HDR</span>
+                    <span class="device-pill">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="pill-icon">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                        TV COMPATIBLE
+                    </span>
+                </div>
+                
+                <!-- Loading Skeleton -->
+                <div class="skeleton-loader" id="player-skeleton">
+                    <div class="skeleton-logo">ADITYA'S STREAM</div>
+                    <div class="skeleton-pulse">Connecting to World Cup Live Stream...</div>
+                </div>
+
+                <!-- Aspect Ratio 16:9 Player Frame -->
+                <div class="player-iframe-ratio">
+                    <iframe
+                        id="player"
+                        src="https://dami-tv.pro/embed/?id=wc%2F2026-06-23%2Fpor-uzb"
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Match Information Card -->
+        <div class="live-match-info-card glass-card section-reveal">
+            <div class="match-info-top">
+                <div class="match-stage">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="match-stage-icon">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                    </svg>
+                    <span>GROUP K &bull; STADIUM DE MONTERREY</span>
+                </div>
+                <div class="stream-hd-badge">
+                    <span class="badge-hd-dot"></span>
+                    ULTRA HD 1080P 60FPS
+                </div>
+            </div>
+            
+            <div class="teams-scoreboard-wrapper">
+                <div class="scoreboard-team team-home">
+                    <span class="scoreboard-flag">🇵🇹</span>
+                    <span class="scoreboard-name">Portugal</span>
+                </div>
+                
+                <div class="scoreboard-score-area">
+                    <div class="scoreboard-scores">
+                        <span class="score-num" id="score-home">2</span>
+                        <span class="score-separator">:</span>
+                        <span class="score-num" id="score-away">1</span>
+                    </div>
+                    <div class="match-timer-badge">
+                        <span class="timer-pulse"></span>
+                        <span id="match-live-timer">78:42</span>
+                    </div>
+                </div>
+                
+                <div class="scoreboard-team team-away">
+                    <span class="scoreboard-name">Uzbekistan</span>
+                    <span class="scoreboard-flag">🇺🇿</span>
+                </div>
+            </div>
+
+            <div class="match-footer-details">
+                <div class="detail-pill">
+                    <span class="pill-label">COMPETITION:</span>
+                    <span class="pill-value">FIFA World Cup 2026</span>
+                </div>
+                <div class="detail-pill">
+                    <span class="pill-label">BROADCAST ASPECT:</span>
+                    <span class="pill-value">16:9 Standard</span>
+                </div>
+                <div class="detail-pill">
+                    <span class="pill-label">STREAMING ENGINE:</span>
+                    <span class="pill-value">ADITYA-v2.6 Low Latency</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Cup Schedule Section -->
+    <section class="schedule-section container section-reveal" id="schedule">
+        <div class="section-header">
+            <h2 class="section-title">UPCOMING FIXTURES</h2>
+            <p class="section-description">World Cup 2026 live broadcasting schedule. Select a match to view timings.</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="schedule-grid">
+            <!-- Card 1 -->
+            <div class="schedule-card glass-card">
+                <div class="card-glow-overlay"></div>
+                <div class="schedule-meta">
+                    <span class="group-tag">GROUP A</span>
+                    <span class="status-tag upcoming">UPCOMING</span>
+                </div>
+                <div class="schedule-teams">
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇦🇷</span>
+                        <span class="team-name-small">Argentina</span>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇫🇷</span>
+                        <span class="team-name-small">France</span>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>June 24, 2026</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>18:00 Kickoff</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>MetLife Stadium, NY/NJ</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="schedule-card glass-card">
+                <div class="card-glow-overlay"></div>
+                <div class="schedule-meta">
+                    <span class="group-tag">GROUP B</span>
+                    <span class="status-tag upcoming">UPCOMING</span>
+                </div>
+                <div class="schedule-teams">
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇧🇷</span>
+                        <span class="team-name-small">Brazil</span>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇩🇪</span>
+                        <span class="team-name-small">Germany</span>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>June 25, 2026</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>21:00 Kickoff</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>SoFi Stadium, Los Angeles</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="schedule-card glass-card">
+                <div class="card-glow-overlay"></div>
+                <div class="schedule-meta">
+                    <span class="group-tag">GROUP C</span>
+                    <span class="status-tag upcoming">UPCOMING</span>
+                </div>
+                <div class="schedule-teams">
+                    <div class="sch-team">
+                        <span class="team-flag-small">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                        <span class="team-name-small">England</span>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇪🇸</span>
+                        <span class="team-name-small">Spain</span>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>June 26, 2026</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>15:00 Kickoff</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>AT&T Stadium, Dallas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="schedule-card glass-card">
+                <div class="card-glow-overlay"></div>
+                <div class="schedule-meta">
+                    <span class="group-tag">GROUP F</span>
+                    <span class="status-tag upcoming">UPCOMING</span>
+                </div>
+                <div class="schedule-teams">
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇺🇸</span>
+                        <span class="team-name-small">USA</span>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="sch-team">
+                        <span class="team-flag-small">🇲🇽</span>
+                        <span class="team-name-small">Mexico</span>
+                    </div>
+                </div>
+                <div class="schedule-details">
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>June 27, 2026</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>20:00 Kickoff</span>
+                    </div>
+                    <div class="sch-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="sch-icon"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Estadio Azteca, Mexico City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams-section container section-reveal" id="teams">
+        <div class="section-header">
+            <h2 class="section-title">FEATURED TEAMS</h2>
+            <p class="section-description">Comprehensive statistics, current form, and qualification statuses of tournament contenders.</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="teams-grid">
+            <!-- Team 1: Portugal -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🇵🇹</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">Portugal</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #6</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>91%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 91%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>84%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 84%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="8">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="24">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="5">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 2: Argentina -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🇦🇷</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">Argentina</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #1</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>94%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 94%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>89%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 89%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="9">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="28">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="7">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 3: Brazil -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🇧🇷</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">Brazil</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #5</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 92%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>86%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 86%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="7">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="22">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="4">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 4: France -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🇫🇷</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">France</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #2</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 95%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 88%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="8">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="27">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="6">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 5: England -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">England</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #4</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>91%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 91%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="7">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="19">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="6">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 6: Germany -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🇩🇪</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">Germany</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #11</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>89%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 89%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 82%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="6">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="21">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="4">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team 7: Spain -->
+            <div class="team-card glass-card">
+                <div class="team-flag-bg">🇪🇸</div>
+                <div class="team-card-header">
+                    <h3 class="team-name">Spain</h3>
+                    <span class="badge badge-gold">Qualified</span>
+                </div>
+                <div class="team-rank">FIFA RANK: #3</div>
+                <div class="team-stats">
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>ATTACK RATING</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 93%"></div></div>
+                    </div>
+                    <div class="stat-progress-bar">
+                        <div class="bar-header">
+                            <span>DEFENSE RATING</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="bar-track"><div class="bar-fill" style="width: 90%"></div></div>
+                    </div>
+                </div>
+                <div class="counters-grid">
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="8">0</span>
+                        <span class="counter-label">Wins</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="25">0</span>
+                        <span class="counter-label">Goals</span>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter-num" data-target="5">0</span>
+                        <span class="counter-label">Clean Sheets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights-section container section-reveal" id="highlights">
+        <div class="section-header">
+            <h2 class="section-title">MATCH HIGHLIGHTS</h2>
+            <p class="section-description">Catch up on explosive goals, tactical breakdowns, and dramatic finishes.</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="highlights-grid">
+            <!-- Highlight 1 -->
+            <div class="highlight-card glass-card">
+                <div class="thumbnail-container">
+                    <img src="assets/highlight_1.png" alt="Highlight match one thumbnail" class="thumbnail-img" loading="lazy">
+                    <div class="thumbnail-overlay">
+                        <div class="play-btn-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon-svg"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="duration-badge">08:45</span>
+                </div>
+                <div class="highlight-info">
+                    <h3 class="highlight-title">Portugal 3 - 2 Netherlands | Full Match Goals & Highlights</h3>
+                    <p class="highlight-meta">Group Stage &bull; Round of 16 Decider &bull; MetLife Stadium</p>
+                </div>
+            </div>
+
+            <!-- Highlight 2 -->
+            <div class="highlight-card glass-card">
+                <div class="thumbnail-container">
+                    <img src="assets/highlight_2.png" alt="Highlight match two thumbnail" class="thumbnail-img" loading="lazy">
+                    <div class="thumbnail-overlay">
+                        <div class="play-btn-circle">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon-svg"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <span class="duration-badge">12:30</span>
+                </div>
+                <div class="highlight-info">
+                    <h3 class="highlight-title">Brazil 4 - 0 Australia | Complete Group stage Dominance</h3>
+                    <p class="highlight-meta">Group Stage &bull; Opening Match &bull; SoFi Stadium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid Section -->
+    <section class="features-section container section-reveal" id="features">
+        <div class="section-header text-center">
+            <h2 class="section-title">WHY STREAM WITH US?</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card glass-card">
+                <div class="feature-icon">⚽</div>
+                <h3>Ultra HD Streaming</h3>
+                <p>Enjoy matches in pristine 4K HDR at 60 FPS. Ultra clear soccer pitch details and live sound profiles.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Designed with liquid layouts to fit perfectly on all mobile viewports, including folding tablets.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">📺</div>
+                <h3>Smart TV Support</h3>
+                <p>Fully compatible with web browsers on Smart TVs, Android TV, Apple TV, and Chromecast setups.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">🖥️</div>
+                <h3>Fullscreen Viewing</h3>
+                <p>Dedicated fullscreen controls for theater-grade streaming focus. Minimize surrounding clutter.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Adaptive Streaming</h3>
+                <p>Auto-scaling bitrate options ensure smooth stream playback on standard mobile networks.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Fast Loading</h3>
+                <p>Optimized static design delivering ultra fast loading, with no hefty framework bundles or trackers.</p>
+            </div>
+            <div class="feature-card glass-card">
+                <div class="feature-icon">🏆</div>
+                <h3>World Cup Coverage</h3>
+                <p>Complete scheduling, team details, live tracking, and quick links across all 2026 host venues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-text">ADITYA'S</span>
+                    <span class="logo-accent">STREAM</span>
+                </a>
+                <p class="footer-description">
+                    The premium sports streaming hub for football fans. Delivering direct, high-fidelity streams from the FIFA World Cup 2026 without constraints.
+                </p>
+            </div>
+            <div class="footer-links-wrap">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#live-section">Live Broadcast</a></li>
+                        <li><a href="#schedule">Fixtures</a></li>
+                        <li><a href="#highlights">Highlights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legals</h4>
+                    <ul>
+                        <li><a href="#!">Terms of Service</a></li>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">DMCA Infringement</a></li>
+                        <li><a href="#!">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Platform Info</h4>
+                    <ul>
+                        <li><strong>Engine:</strong> ADITYA-v2.6</li>
+                        <li><strong>Region:</strong> Global CDN</li>
+                        <li><strong>PWA Status:</strong> Ready</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; <span id="copyright-year">2026</span> ADITYA'S STREAM. Developed for premium sports broadcasting. All rights reserved.</p>
+            <div class="footer-accent-line"></div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="back-to-top-icon">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
